@@ -6,7 +6,6 @@ const CreateTaskForm = ({ modalStatus, setModalStatus }) => {
   const [newTask, setNewTask] = useState("");
 
   const onWrite = (e) => {
-    console.log(e.target.value);
     setNewTask(e.target.value);
   };
   const onCancel = () => {
