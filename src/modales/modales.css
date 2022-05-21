@@ -1,0 +1,61 @@
+.modal-container {
+    position: absolute;
+    width: 318px;
+    height: 270px;
+    background-color: #69C096;
+    background-color: rgb(35, 35, 35);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 5;
+    font-family: monospace;
+    padding: 0.6rem;
+    border-radius: 9px;
+}
+
+.modal-container form {
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+}
+
+.modal-container h4 {
+    font-size: 1.4rem;
+    color: rgb(214, 214, 214);
+    margin-bottom: 1.6rem;
+}
+
+.modal-container textarea {
+    font-size: 1rem;
+    padding: 0.3rem 0.3rem;
+    min-height: 50px;
+    background-color: rgb(218, 218, 218);
+    border: none;
+    resize: none;
+}
+
+.create-buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.create-buttons button {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem 1rem;
+    border-radius: 6px;
+    color: white;
+}
+
+.create-buttons .ok-btn {
+    background-color: #69C096;
+}
+.create-buttons .cancel-btn{
+    background-color: #a74646;
+}

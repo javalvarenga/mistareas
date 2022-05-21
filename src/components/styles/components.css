@@ -1,0 +1,140 @@
+/* Todo header */
+
+.chores-header {
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.3rem 1.6rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chores-header h2 {
+    width: 95%;
+    text-align: right;
+}
+
+.searchInput {
+    height: 30px;
+    width: 100%;
+    max-width: 290px;
+    padding: 0.6rem 0.9rem;
+    font-size: 1.3rem;
+    color: #2E2E2E;
+    background-color: #fdffff;
+    border-radius: 13px;
+    box-shadow: 0px 5px 6px #191919;
+    margin-bottom: 1.6rem;
+}
+
+/* Todo List */
+.task-section {
+    background-color: #2E2E2E;
+    min-height: calc(100vh - 230px);
+}
+
+.task-section ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    transform: translateY(-20px);
+}
+
+.task-section ul li {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    max-width: 290px;
+    padding: 0.6rem 0.9rem;
+    background-color: #353535;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 19px;
+    border-radius: 9px;
+}
+
+.task-section ul li>p {
+    margin-left: 0.6rem;
+    width: 100%;
+}
+
+.trash-icon {
+    height: 24px !important;
+    width: 24px !important;
+    fill: #D8D8D8 !important;
+}
+
+.completed-icon {
+    height: 35px !important;
+    width: 35px !important;
+    fill: #69C096 !important;
+}
+
+.incompleted-icon {
+    height: 35px !important;
+    width: 35px !important;
+    fill: #D8D8D8 !important;
+}
+
+.trash-icon:hover {
+    fill: rgb(161, 58, 58) !important;
+}
+
+/* add btn */
+.createTodo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: #69C096;
+    box-shadow: 0 0px 4px 1px #686767;
+}
+
+/* loading */
+
+.loading-group {
+    display: flex;
+    transform: translateY(40px);
+}
+
+.loading-group .cube {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #fdffff;
+    border-radius: 3px;
+}
+
+#cube1 {
+    animation: animateCube 2s ease 0s infinite normal backwards;
+}
+
+#cube2 {
+    animation: animateCube 2s ease 0.2s infinite normal backwards;
+}
+
+#cube3 {
+    animation: animateCube 2s ease 0.4s infinite normal backwards;
+}
+
+@keyframes animateCube {
+    0% {
+        transform: translateY(0) rotateY(0);
+        background-color: #2ad298;
+    }
+
+    50% {
+        transform: translateY(-15px) rotateY(360deg);
+        background-color: #54b9dd;
+    }
+
+    100% {
+        transform: translate(0) rotateY(0);
+        background-color: #2ad298;
+    }
+}
